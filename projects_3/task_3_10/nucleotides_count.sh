@@ -4,7 +4,7 @@ echo -e "Файл\tA\tT\tG\tC"
 
 for file in *.fasta; do
     if [[ -s "$file" ]]; then
-        # Убираем строки с '>', затем склеиваем последовательность
+       
         seq=$(grep -v "^>" "$file" | tr -d '\n')
         
         A_count=$(echo "$seq" | grep -o "A" | wc -l)
