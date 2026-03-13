@@ -6,7 +6,7 @@ do
 done
 
 echo "Файлы созданы: test1.txt, test2.txt, ..., test10.txt"
-№Удаление(тот же порядок)
+#Удаление(тот же порядок)
 i=10
 while [ $i -ge 1 ]
 do
